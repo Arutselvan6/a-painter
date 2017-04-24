@@ -27,7 +27,6 @@ AFRAME.registerComponent('paint-controls', {
         el.setAttribute('teleport-controls', {button: hand === 'left' ? 'ybutton' : 'bbutton'});
         el.setAttribute('obj-model', {obj: 'assets/models/oculus-' + hand + '-controller.obj', mtl: 'https://cdn.aframe.io/controllers/oculus/oculus-touch-controller-' + hand + '.mtl'});
 
-
         var tooltips = Array.prototype.slice.call(document.querySelectorAll('.oculus-tooltips'));
         tooltips.forEach(function (tooltip) {
           tooltip.setAttribute('visible', true);
